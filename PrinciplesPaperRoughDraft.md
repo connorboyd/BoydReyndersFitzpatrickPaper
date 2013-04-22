@@ -1,4 +1,4 @@
-Scala: The an outdated functional language.
+#Scala: The an outdated functional language.
 
 Ever since it's inception, Scala has prided itself on being the only functional programming language [100% false] on the JVM.
 However, Scala may soon become outdated with Java's new update, Java 8.
