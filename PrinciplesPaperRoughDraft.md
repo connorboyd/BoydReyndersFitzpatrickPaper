@@ -78,7 +78,6 @@ This new collection method benefits most on multicore processors by enabling aut
 
 ..................................................................................................................
 
-
 #Parallel Collections
 
 The name Scala is a blend of the words scalable and language.
@@ -100,3 +99,11 @@ This example demonstrates Java's parallel collections:
 
 Java's parallel collections are nearly identical to Scala's.
 The parallel collections will be key to making Java more competitive with Scala.
+
+..................................................................................................................
+
+#Conclusion
+
+With these new additions to the Java SDK, Java is moving from an imperative programming language to a more dynamic language that incorporates both imperative and functional programming. 
+Scala is purely a functional programming language that uses the JVM, however with the direction Java 8 is moving in, Scala will become less necessary. 
+Java is a more popular language with greater developer support and will therefore be able to update faster continue its move towards functional programming.
