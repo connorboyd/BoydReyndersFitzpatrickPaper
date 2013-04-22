@@ -5,6 +5,10 @@ However, Scala may soon become outdated with Java's new update, Java 8.
 Java 8 uses what we call "Lambda expressions" to turn the imperative style of programming that is Java into a more functional style like Scala.
 With the 2014 updates to the Java language, we may see a complete overtaking of the Scala language with the more widely used, and superior, Java implementations.
 
+..................................................................................................................
+
+#Lambda Expressions
+
 One of the features of Java 8 that exemplifies functional programming is its use of lambda expressions; these are typically used in GUI development.
 GUI coding is important in connecting events to behaviors.
 Events can be user actions, such as clicking the mouse or pressing a key.
@@ -42,6 +46,8 @@ Lambda expressions solve these kinds of problems.
 
 ..................................................................................................................
 
+#Type Inferencing
+
 A useful thing the Lambda expressions will be able to do in Java 8 is type inferencing. 
 Type inferencing was initially introduced in the Java 7 sdk, but contribute to higher order functional programming. 
 Type inferencing is very useful in programming because we can choose to omit a type definition whenever the compiler could infer that type by itself. 
@@ -54,6 +60,8 @@ we are able to name arbitrary new variables s1 and s2, but the compiler knows th
 The main advantage of Type Inferencing in java 8 is for syntactical sugar. The programmer is essentially limiting the amount needed to type out a function by using type inferencing.
 
 ..................................................................................................................
+
+#Collections
 
 Another update in Java 8 will be to collections. 
 With the new lambda expressions, it will be easier to spread out the processing of collections over multiple threads. 
