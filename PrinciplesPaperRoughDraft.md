@@ -39,3 +39,13 @@ This code can be simplified with anonymous inner classes:
 
 With anonymous inner classes, the new implementation is cleaner, but we still create an instance of a class for a single method.
 Lambda expressions solve these kinds of problems. 
+
+------------------------------------------------------------------------------------------------------------------
+A useful thing the Lambda expressions will be able to do in Java 8 is type inferencing. Type inferencing was initially introduced in the Java 7 sdk, but contribute to higher order functional programming. Type inferencing is very useful in programming because we can choose to omit a type definition whenever the compiler could infer that type by itself. For example, in this code:
+
+List<String> list = Arrays.asList(...);
+Collections.sort(list, (s1, s2) -> s1.length() - s2.length());
+     
+we are able to name arbitrary new variables s1 and s2, but the compiler knows that we are talking about strings so is able to deal with it appropriately. The main advantage of Type Inferencing in java 8 is for syntactical sugar. The programmer is essentially limiting the amount needed to type out a function by using type inferencing.
+------------------------------------------------------------------------------------------------------------------
+
