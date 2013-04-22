@@ -1,0 +1,11 @@
+Another update in Java 8 will be to collections. With the new lambda expressions, it will be easier to spread out the 
+processing of collections over multiple threads. A current problem with Java is that it is the client code that is 
+responsible for processing different elements in parallel. With Java 8, the collection will be able to take care of this 
+organization. With support for internal iterations of collections, Java will more efficiently utilize parallel hardware. 
+This also helps push Java to a more functional programming style. A new interface called Stream will make transformation 
+operations for collections more simple and efficient. Java collections currently require the creation of temporary 
+variables that hold intermediate steps of the transformation, thus making Java more bulky and slow. Stream will eliminate 
+the need for intermediate collection variables/memory and it will allow for lazy evaluation. This further removes bulk 
+from programs by delaying the evaluation of an expression until it is needed. Additionally, lazy evaluation avoids 
+repeating the same evaluation, which can reduce run time by an exponential factor. This new collection method benefits 
+most on multicore processors by enabling automatic parallelism.
