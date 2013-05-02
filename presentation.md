@@ -70,7 +70,7 @@ with
 
  - Parallel Streams
 
-	myCollection.parallelStream()
+		myCollection.parallelStream()
 
 ---
 ### Parallel Processing ###
