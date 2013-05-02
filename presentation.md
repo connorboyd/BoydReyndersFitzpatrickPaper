@@ -98,6 +98,7 @@ with
  - MultiFunction<T,U>	Works similar to "maps" in scala, applies T value to multiple U values
 
  - BinaryOperator<T>	Performs an operation with two operands and returns a result of the same type.
+
 ---
 ### Default Methods ###
 
