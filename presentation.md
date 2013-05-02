@@ -60,6 +60,38 @@ with
 
 
 ---
+
+### Streams ###
+
+Primary goals for Java 8:
+
+- modernize the Collections library
+- make parallelism easier
+
+But how?
+
+- We use Streams!
+
+---
+### Streams Cont. ###
+
+Some key characteristics of a Stream are:
+
+- A Stream has potentially infinite series of values
+- A Stream contains no storage for values
+- Streams support a functional style of programming
+- Streams can be either sequential or parallel 
+
+- The details of how the iteration is performed is controlled by the library.
+
+---
+### Obtaining a Stream ###
+  - A Stream can also be created given an Iterator or Supplier function (for infinite Streams) 
+  - To create a Stream that supports parallel operations, a Spliterator is required 
+ - To perform parallel options, a Stream recursively splits the original aggregate into smaller pieces -- each with it's own Spliterator, until a threshold size is reached beyond which any further splitting would just generate additional cost. 
+ - The resulting Spliterators can then be iterated over in parallel.
+
+---
 ### Parallel Processing ###
 
  - With the new lambda expressions, it will be easier to spread out the processing of collections over multiple threads.
@@ -70,7 +102,17 @@ with
 
  - Parallel Streams
 
-		myCollection.parallelStream()
+		myCollection.parallelStream();
+
+---
+### Parallel Processing ###
+
+ - With the new lambda expressions, it will be easier to spread out the processing of collections over multiple threads.
+
+ - Java 8 will more efficiently utilize parallel hardware.
+
+ - This brings Java much closer to Scala in terms of scalability
+
 
 ---
 ### Parallel Processing ###
@@ -121,17 +163,17 @@ with
 
 ##### Some new functions #####
 
- - Predicate<T>		returns true if the input matches some criteria
+ - Predicate\<T\>	Returns true if the input matches some criteria
 
- - Supplier<T>		A supplier of objects. The result objects are either created during the invocation of get or by some prior action.
+ - Supplier\<T\>		A supplier of objects. The result objects are either created during the invocation of get or by some prior action.
 
- - Block<T>		Performs operations on an object. Can change the state of this object or other objects
+ - Block\<T\>		Performs operations on an object. Can change the state of this object or other objects
 
- - Function<T, R>	Maps an input of type T to an output of type R
+ - Function\<T, R\>	Maps an input of type T to an output of type R
 
- - MultiFunction<T,U>	Works similar to "maps" in scala, applies T value to multiple U values
+ - MultiFunction\<T,U\>	Works similar to "maps" in scala, applies T value to multiple U values
 
- - BinaryOperator<T>	Performs an operation with two operands and returns a result of the same type.
+ - BinaryOperator\<T\>	Performs an operation with two operands and returns a result of the same type.
 
 ---
 ### Default Methods ###
@@ -156,8 +198,9 @@ with
 	- closures
 	- lambda expressions
 
+ - Both run on JVM
  - Very similar language styles
- - Scala is a great preparation for Java 8
+ - Scala is/has been great preparation for Java 8
 
 ---
 ### Contrasts ###
@@ -168,8 +211,10 @@ with
 ---
 ### Usage ###
 
- - Java 8 will be more widely used
- - Java 8 will therefore have more support
+ - Java 8 widely used
+  - usually listed as most widely used language
+ - (should have) more support
+ - Java 8 is an update, not an entirely new language
 
 ---
 ### Conclusion ###
@@ -177,7 +222,8 @@ with
 - Java 8 will be a powerful new form of functional programming
 - supports many features that Scala has
 - will be more widely used and thus receive more updates/attention
-- java 8 has been pushed back another year (to 2014)
+ - Java 8 is an update
+- Java 8 release date is approximately March, 2014
 
 ---
 ### Sources ###
