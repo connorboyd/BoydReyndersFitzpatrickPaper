@@ -102,8 +102,9 @@ with
 ---
 ### Default Methods ###
 
-
-
+ - The main reason for default methods in Java 8 is to support API evolution
+ - Adding new methods to an existing interface would break compatibility with older programs which implemented the interface
+    public default void forEach(Block<? super T> block)
 
 
 
