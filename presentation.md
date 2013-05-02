@@ -110,6 +110,7 @@ with
 	        List<String> strings = ...;
 		// compile error -- lambda parameter names shadow local variables
 		strings.sort((a, b) -> a.compareTo(b));
+
 ---
 ### Functional Interfaces ###
 
@@ -126,6 +127,7 @@ with
  - MultiFunction<T,U>	Works similar to "maps" in scala, applies T value to multiple U values
 
  - BinaryOperator<T>	Performs an operation with two operands and returns a result of the same type.
+
 
 ---
 ### Default Methods ###
