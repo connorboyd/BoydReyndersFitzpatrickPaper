@@ -65,7 +65,12 @@ with
  - With the new lambda expressions, it will be easier to spread out the processing of collections over multiple threads.
 
  - Java 8 will more efficiently utilize parallel hardware.
+
  - This brings Java much closer to Scala in terms of scalability
+
+ - Parallel Streams
+
+	myCollection.parallelStream()
 
 ---
 ### Parallel Processing ###
