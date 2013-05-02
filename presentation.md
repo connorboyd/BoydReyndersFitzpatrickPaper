@@ -1,6 +1,8 @@
 Java 8
 ======
 
+###Lambda Functions in Java 8###
+
 By: Connor Boyd, Doug Fitzpatrick, Nick Reynders
 
 ---
