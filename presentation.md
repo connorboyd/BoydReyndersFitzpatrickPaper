@@ -10,7 +10,7 @@ By: Connor Boyd, Doug Fitzpatrick, Nick Reynders
  - Default methods for interfaces
  - Enhanced type inference (target typing)
 
-"`[Java 8] will enable us to write better Java code, using a more 'fluent', functional, and declarative style, with much less boilerplate code for many common use cases`" - Rad Widmer
+" *[Java 8] will enable us to write better Java code, using a more 'fluent', functional, and declarative style, with much less boilerplate code for many common use cases* " - Rad Widmer
 
 ---
 ### Lambda Expressions ###
@@ -101,12 +101,15 @@ with
  - MultiFunction<T,U>	Works similar to "maps" in scala, applies T value to multiple U values
 
  - BinaryOperator<T>	Performs an operation with two operands and returns a result of the same type.
+
 ---
 ### Default Methods ###
 
+ - The main reason for default methods in Java 8 is to support API evolution
+ - Adding new methods to an existing interface would break compatibility with older programs which implemented the interface
 
-
-
+		public default void forEach(Block<? super T> block)
+		public default Predicate<T> negate()
 
 
 ---
