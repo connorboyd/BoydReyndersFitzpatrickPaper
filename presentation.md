@@ -107,6 +107,7 @@ with
 
     public default void forEach(Block<? super T> block)
 
+    public default Predicate<T> negate()
 
 
 ---
