@@ -10,7 +10,7 @@ By: Connor Boyd, Doug Fitzpatrick, Nick Reynders
  - default methods for interfaces
  - enhanced type inference (target typing)
 
-"*[Java 8] will enable us to write better Java code, using a more 'fluent', functional, and declarative style, with much less boilerplate code for many common use cases*" - Rad Widmer
+" *[Java 8] will enable us to write better Java code, using a more 'fluent', functional, and declarative style, with much less boilerplate code for many common use cases* " - Rad Widmer
 
 ---
 ### Lambda Expressions ###
