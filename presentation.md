@@ -67,6 +67,31 @@ with
  - Java 8 will more efficiently utilize parallel hardware.
  - This brings Java much closer to Scala in terms of scalability
 
+---
+### Parallel Processing ###
+
+	//Lambda
+	long sum = myList.stream().filter(i -> i % 2 == 0)
+						      .reduce(0L, (a, b) -> a + b);
+	
+	//Loops
+	List<Long> filtered = new LinkedList<Long>();
+	for(Long l : myList) {
+		if(l % 2 == 0)	{
+			filtered.add(l);
+		}
+	}
+	long sum = 0L;
+	for(Long l : myList) {
+		if(l % 2 == 0)
+			sum += l;
+	}
+
+- The example using Lambda ran 2.6x faster on average and used all 8 threads on my i7
+
+- The loop example only used 1 thread
+
+- Lambda implementation was also much more concise
 
 ---
 ### Variable Capture ###
