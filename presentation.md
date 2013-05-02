@@ -6,9 +6,9 @@ By: Connor Boyd, Doug Fitzpatrick, Nick Reynders
 ---
 ### New Features ###
 
- - lambdas (closures)
- - default methods for interfaces
- - enhanced type inference (target typing)
+ - Lambdas (closures)
+ - Default methods for interfaces
+ - Enhanced type inference (target typing)
 
 "`[Java 8] will enable us to write better Java code, using a more 'fluent', functional, and declarative style, with much less boilerplate code for many common use cases`" - Rad Widmer
 
@@ -63,7 +63,10 @@ with
 ### Parallel Processing ###
 
  - With the new lambda expressions, it will be easier to spread out the processing of collections over multiple threads.
+
  - Java 8 will more efficiently utilize parallel hardware.
+ - This brings Java much closer to Scala in terms of scalability
+
 
 ---
 ### Variable Capture ###
@@ -75,7 +78,7 @@ with
 ---
 ### Shadowing ###
 
- - lambda's parameter names can't shadow any local variable names in the enclosing method. The following example would not compile.
+ - Lambda's parameter names can't shadow any local variable names in the enclosing method. The following example would not compile.
 
 		String a, b;
 
@@ -107,7 +110,7 @@ with
 
 
 ---
-### Scala Preperation ###
+### Scala Preparation ###
 
  - Scala features
 	- parallelism
@@ -120,7 +123,7 @@ with
 	- lambda expressions
 
  - Very similar language styles
- - Scala is a great preperation for Java 8
+ - Scala is a great preparation for Java 8
 
 ---
 ### Contrasts ###
@@ -131,15 +134,15 @@ with
 ---
 ### Usage ###
 
- - java 8 will be more widely used (what is it? like 5 billion devices)
- - java 8 will therefore have more support
+ - Java 8 will be more widely used
+ - Java 8 will therefore have more support
 
 ---
 ### Conclusion ###
 
 - Java 8 will be a powerful new form of functional programming
-- supports many features that scala has
-- will be more widely used and thus recieve more updates/attention
+- supports many features that Scala has
+- will be more widely used and thus receive more updates/attention
 - java 8 has been pushed back another year (to 2014)
 
 ---
