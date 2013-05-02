@@ -106,6 +106,7 @@ with
  - Adding new methods to an existing interface would break compatibility with older programs which implemented the interface
 
 	`public default void forEach(Block<? super T> block)`
+	
 	`public default Predicate<T> negate()`
 
 
