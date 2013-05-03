@@ -17,7 +17,6 @@ This new collection method benefits most on multicore processors by enabling aut
 
 >These two sections have too much overlap. We need to combine them or something.
 
-
 ..................................................................................................................
 
 #Parallel Collections
@@ -41,3 +40,41 @@ This example demonstrates Java's parallel collections:
 
 Java's parallel collections are nearly identical to Scala's.
 The parallel collections will be key to making Java more competitive with Scala.
+
+..................................................................................................................
+
+#Focuses more on the streams
+
+Another update in Java 8 will be to collections. 
+
+This also helps push Java to a more functional programming style. 
+
+A new interface called Stream will make transformation operations for collections more simple and efficient. 
+
+Java collections currently require the creation of temporary variables that hold intermediate steps of the transformation, thus making Java more bulky and slow. 
+
+Stream will eliminate the need for intermediate collection variables/memory and it will allow for lazy evaluation. 
+
+>Is that true?
+It sounds kind of like monads
+Maybe we could incorporate that.
+
+This further removes bulk from programs by delaying the evaluation of an expression until it is needed. 
+
+Additionally, lazy evaluation avoids repeating the same evaluation, which can reduce run time by an exponential factor. 
+
+
+..................................................................................................................
+
+#Focuses more on the Parallelism
+
+With the new lambda expressions, it will be easier to spread out the processing of collections over multiple threads. 
+
+A current problem with Java is that it is the client code that is responsible for processing different elements in parallel. 
+
+With Java 8, the collection will be able to take care of this organization. 
+
+With support for internal iterations of collections, Java will more efficiently utilize parallel hardware. 
+
+This new collection method benefits most on multicore processors by enabling automatic parallelism.
+
