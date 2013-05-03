@@ -59,22 +59,12 @@ we are able to name arbitrary new variables s1 and s2, but the compiler knows th
 The main advantage of Type Inferencing in java 8 is for syntactical sugar. The programmer is essentially limiting the amount needed to type out a function by using type inferencing.
 Type inferencing in Java 8 will not be quite as robust as it is in Scala, but it is still a welcome change.
 
-#Collections
-
-Another update in Java 8 will be to collections. 
-With the new lambda expressions, it will be easier to spread out the processing of collections over multiple threads. 
-A current problem with Java is that the client code is responsible for processing different elements in parallel. 
-With Java 8, the collection will be able to take care of this organization. 
-With support for internal iterations of collections, Java will more efficiently utilize parallel hardware. 
-This will also help push Java to a more functional programming style. 
-A new interface called Stream will make transformation operations for collections more simple and efficient. 
-Java collections currently require the creation of temporary variables that hold intermediate steps of the transformation, thus making Java more bulky and slow. 
-
 #Streams
 
-One important change in Java 8 to fix this problem will be the addition of Streams.
+One important change in Java 8 to fix this problem will be the addition of Streams; Stream will make transformation operations for collections more simple and efficient.
 A Stream is a flow of values created from a data structure that works with higher order functions in Java 8.
 Using Streams and higher order functions, it is possible to perform calculations using one statement, whereas using iteration, it would take multiple loops and many more lines of code.
+Java collections currently require the creation of temporary variables that hold intermediate steps of the transformation, thus making Java more bulky and slow. 
 Streams will eliminate the need for intermediate collection variables/memory and will allow for lazy evaluation. 
 On top of this, they will also make the code much easier to read and debug.
 Lazy evaluation will further remove bulk from programs by delaying the evaluation of an expression until it is needed. 
@@ -83,6 +73,12 @@ This new collection method benefits most on multicore processors by enabling aut
 
 #Parallel Collections
 
+Another update in Java 8 will be to collections. 
+With the new lambda expressions, it will be easier to spread out the processing of collections over multiple threads. 
+A current problem with Java is that the client code is responsible for processing different elements in parallel. 
+With Java 8, the collection will be able to take care of this organization. 
+With support for internal iterations of collections, Java will more efficiently utilize parallel hardware. 
+This will also help push Java to a more functional programming style. 
 The name Scala is a blend of the words scalable and language.
 Scala was designed to be easily scalable to very large problems.
 One key feature that makes this possible is Scala's parallel collections.
