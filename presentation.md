@@ -1,11 +1,12 @@
 Java 8
-======
+=====================
 
 ###Lambda Functions in Java 8###
 
 By: Connor Boyd, Doug Fitzpatrick, Nick Reynders
 
 ---
+
 ### New Features ###
 
  - Lambdas (closures)
@@ -15,6 +16,7 @@ By: Connor Boyd, Doug Fitzpatrick, Nick Reynders
 " *[Java 8] will enable us to write better Java code, using a more 'fluent', functional, and declarative style, with much less boilerplate code for many common use cases* " - Rad Widmer
 
 ---
+
 ### Lambda Expressions ###
 
  - Lambda Expressions are Closures
@@ -34,6 +36,7 @@ with
             	    }
         	};
 ---
+
 ### Lambda Expressions Cont.###
 	
 	class ButtonHandler implements ActionListener {
@@ -63,6 +66,7 @@ with
 
 ---
 
+
 ### Streams ###
 
 Primary goals for Java 8:
@@ -75,6 +79,7 @@ But how?
 - We use Streams!
 
 ---
+
 ### Streams Cont. ###
 
 Some key characteristics of a Stream are:
@@ -87,6 +92,7 @@ Some key characteristics of a Stream are:
 - The details of how the iteration is performed is controlled by the library.
 
 ---
+
 ### Obtaining a Stream ###
   - A Stream can also be created given an Iterator or Supplier function (for infinite Streams) 
   - To create a Stream that supports parallel operations, a Spliterator is required 
@@ -94,6 +100,7 @@ Some key characteristics of a Stream are:
  - The resulting Spliterators can then be iterated over in parallel.
 
 ---
+
 ### Parallel Processing ###
 
  - With the new lambda expressions, it will be easier to spread out the processing of collections over multiple threads.
@@ -107,6 +114,7 @@ Some key characteristics of a Stream are:
 		myCollection.parallelStream();
 
 ---
+
 ### Parallel Processing ###
 
  - With the new lambda expressions, it will be easier to spread out the processing of collections over multiple threads.
@@ -117,6 +125,7 @@ Some key characteristics of a Stream are:
 
 
 ---
+
 ### Parallel Processing ###
 
 	//Lambda
@@ -143,6 +152,7 @@ Some key characteristics of a Stream are:
 - Lambda implementation was also much more concise
 
 ---
+
 ### Variable Capture ###
 
  - A lambda expression may reference variables which are visible in the current scope -- this is what makes lambdas closures instead of simply functions.
@@ -150,6 +160,7 @@ Some key characteristics of a Stream are:
  - In contrast to anonymous inner classes, lambdas don't introduce another level of scope.
 
 ---
+
 ### Shadowing ###
 
  - Lambda's parameter names can't shadow any local variable names in the enclosing method. The following example would not compile.
@@ -161,6 +172,7 @@ Some key characteristics of a Stream are:
 		strings.sort((a, b) -> a.compareTo(b));
 		
 ---
+
 ### Functional Interfaces ###
 
 ##### Some new functions #####
@@ -178,6 +190,7 @@ Some key characteristics of a Stream are:
  - BinaryOperator\<T\>	Performs an operation with two operands and returns a result of the same type.
 
 ---
+
 ### Default Methods ###
 
  - The main reason for default methods in Java 8 is to support API evolution
@@ -188,6 +201,7 @@ Some key characteristics of a Stream are:
 
 
 ---
+
 ### Scala Preparation ###
 
  - Scala features
@@ -205,12 +219,14 @@ Some key characteristics of a Stream are:
  - Scala is/has been great preparation for Java 8
 
 ---
+
 ### Contrasts ###
 
 - in Java 8 a functional interface (with one method) must be declared for EVERY higher order function
 - in Scala, no functional interface is needed because functions are 'first class citizens'
 
 ---
+
 ### Usage ###
 
  - Java 8 widely used
@@ -219,6 +235,7 @@ Some key characteristics of a Stream are:
  - Java 8 is an update, not an entirely new language
 
 ---
+
 ### Conclusion ###
 
 - Java 8 will be a powerful new form of functional programming
@@ -228,6 +245,7 @@ Some key characteristics of a Stream are:
 - Java 8 release date is approximately March, 2014
 
 ---
+
 ### Sources ###
 
  [1] - http://sett.ociweb.com/sett/settFeb2013.html
