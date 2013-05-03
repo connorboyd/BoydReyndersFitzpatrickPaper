@@ -1,6 +1,7 @@
 #Java 8: Functional Programming implementations
 
 " *[Java 8] will enable us to write better Java code, using a more 'fluent', functional, and declarative style, with much less boilerplate code for many common use cases* " - Rad Widmer
+
 Ever since it's inception, Scala has prided itself on being the best functional programming language on the JVM.
 However, Scala may soon become outdated with Java's new update, Java 8.
 Java 8 uses what we call "Lambda expressions" to turn the imperative style of programming that is Java into a more functional style.
@@ -68,7 +69,7 @@ A Stream is a flow of values created from a data structure that works with highe
 Using Streams and higher order functions, it is possible to perform calculations using one statement, whereas using iteration, it would take multiple loops and many more lines of code.
 Java collections currently require the creation of temporary variables that hold intermediate steps of the transformation, thus making Java more bulky and slow. 
 Streams will eliminate the need for intermediate collection variables/memory and will allow for lazy evaluation. 
-On top of this, they will also make the code much easier to read and debug.
+On top of this, they will also make the code much easier to read and debug, with fewer points of failure.
 Lazy evaluation will further remove bulk from programs by delaying the evaluation of an expression until it is needed. 
 Additionally, this avoids repeating the same evaluation, which can reduce run time by an exponential factor. 
 This new collection method benefits most on multicore processors by enabling automatic parallelism.
