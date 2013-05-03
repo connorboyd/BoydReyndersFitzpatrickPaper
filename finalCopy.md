@@ -46,6 +46,12 @@ This code can be simplified with anonymous inner classes:
 With anonymous inner classes, the new implementation is cleaner, but we still create an instance of a class for a single method.
 Lambda expressions solve these kinds of problems. 
 
+>Stuff below is new
+
+Lambda functions in Java 8 will be closures, rather than regular functions. This means that Lambdas do not introduce another level of scope, and can access variables in the enclosing scope.
+This contrasts with anonymous inner classes, which do introduce a new level of scope.
+
+
 ..................................................................................................................
 
 #Type Inferencing
@@ -62,12 +68,18 @@ For example, in this code:
     List<String> list = Arrays.asList(...);
     Collections.sort(list, (s1, s2) -> s1.length() - s2.length());
      
-we are able to name arbitrary new variables s1 and s2, but the compiler knows that we are talking about strings so is able to deal with it appropriately. 
+We are able to name arbitrary new variables s1 and s2, but the compiler knows that we are talking about strings so is able to deal with it appropriately. 
 The main advantage of Type Inferencing in java 8 is for syntactical sugar. The programmer is essentially limiting the amount needed to type out a function by using type inferencing.
+
+>New stuff below
+
+Type inferencing in Java 8 will not be quite as robust as it is in Scala, but it is still a welcome change
 
 ..................................................................................................................
 
 #Collections
+
+>Maybe change this section to focus more on the actual Streams
 
 Another update in Java 8 will be to collections. 
 With the new lambda expressions, it will be easier to spread out the processing of collections over multiple threads. 
@@ -82,7 +94,8 @@ This further removes bulk from programs by delaying the evaluation of an express
 Additionally, lazy evaluation avoids repeating the same evaluation, which can reduce run time by an exponential factor. 
 This new collection method benefits most on multicore processors by enabling automatic parallelism.
 
->These two sections are redundant
+>These two sections have too much overlap. We need to combine them or something.
+
 
 ..................................................................................................................
 
