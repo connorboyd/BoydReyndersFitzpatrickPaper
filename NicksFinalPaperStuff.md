@@ -108,3 +108,17 @@ This isn't to say that what we have learned thus far in the course if of no use 
 On quite the contrary, because the new Java SDK additions are so similar to the functional programming we have been using all semester, every student from the course should, hopefully, be able to pick up Java 8 with relative ease.
 Because Java 8 is an update to the already widely popular Java 7 (listed as the most popularly used language on several sites) this means that people who use Java already will be able to experience this new functional type of programming without switching languages.
 On top of this, Java 8 will recieve a wide amount of both developer and community support, leading to faster updates and moving towards a more perfect style of functional programming.
+
+---
+### Sources ###
+
+ [1] - http://sett.ociweb.com/sett/settFeb2013.html
+
+ [2] - www.infoq.com/articles/java-8-vs-scala
+
+ [3] - http://blog.dhananjaynene.com/2013/02/exploring-java-8-lambdas-part-1/
+
+ [4] - http://cdn.parleys.com/p/5148922b0364bc17fc56c890/1353336439745.pdf
+
+ [5] - http://en.wikipedia.org/wiki/Closure_(computer_science)#Local_classes_.28Java.29
+
