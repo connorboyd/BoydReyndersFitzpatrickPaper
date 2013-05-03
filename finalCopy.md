@@ -33,6 +33,10 @@ This code can be simplified with anonymous inner classes:
 
 >Is this the Lambda example? It's not very clear, and it doesn't look like the other Lambda syntax
 
+>Ok, so I did some reading on anonymous inner classes, and apparently they're not related to Lambdas.
+We need to get an example that uses Lambdas.
+That's kind of the point of the paper.
+
     class UIBuilder {
           public UIBuilder() {
                 button.addActionListener(new ActionListener() {
