@@ -43,7 +43,7 @@ The parallel collections will be key to making Java more competitive with Scala.
 
 ..................................................................................................................
 
-#Focuses more on the streams
+#Focuses more on the Streams
 
 Another update in Java 8 will be to collections. 
 
@@ -55,11 +55,12 @@ Java collections currently require the creation of temporary variables that hold
 
 Stream will eliminate the need for intermediate collection variables/memory and it will allow for lazy evaluation. 
 
->Is that true?
-It sounds kind of like monads
-Maybe we could incorporate that.
-
 This further removes bulk from programs by delaying the evaluation of an expression until it is needed. 
+
+>Is that true?
+It sounds kind of like monads. 
+(I think, monads still confuse me)
+Maybe we could incorporate that.
 
 Additionally, lazy evaluation avoids repeating the same evaluation, which can reduce run time by an exponential factor. 
 
@@ -78,3 +79,28 @@ With support for internal iterations of collections, Java will more efficiently 
 
 This new collection method benefits most on multicore processors by enabling automatic parallelism.
 
+
+
+..................................................................................................................
+
+#Test paragraph for the Streams (Version 0.1)
+
+Java 8 makes several important changes to Collections.
+One of the most important changes is the addition of Streams.
+A Stream is a flow of values created from a data structure. (I don't like the wording of this sentence. We can come up with something better)
+Using Streams, it is very easy to perform operations on a Collection.
+Higher order functions in Java 8 work with Streams.
+Using Streams and higher order functions, it is possible to perform calculations using one statement, whereas using iteration, it would take multiple loops and many more lines of code.
+Streams and higher order functions make the code much easier to read and debug.
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br>
