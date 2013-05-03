@@ -1,6 +1,6 @@
 #Java 8: Functional Programming implementations
 
-"*[Java 8] will enable us to write better Java code, using a more 'fluent', functional, and declarative style, with much less boilerplate code for many common use cases* " - Rad Widmer
+" *[Java 8] will enable us to write better Java code, using a more 'fluent', functional, and declarative style, with much less boilerplate code for many common use cases* " - Rad Widmer
 Ever since it's inception, Scala has prided itself on being the best functional programming language on the JVM.
 However, Scala may soon become outdated with Java's new update, Java 8.
 Java 8 uses what we call "Lambda expressions" to turn the imperative style of programming that is Java into a more functional style.
