@@ -31,6 +31,8 @@ The ButtonHandler class implements an ActionListener, and stores one method, act
 ButtonHandler has defined its APIs, declared by ActionListener. 
 This code can be simplified with anonymous inner classes:
 
+>Is this the Lambda example? It's not very clear, and it doesn't look like the other Lambda syntax
+
     class UIBuilder {
           public UIBuilder() {
                 button.addActionListener(new ActionListener() {
@@ -49,7 +51,11 @@ Lambda expressions solve these kinds of problems.
 #Type Inferencing
 
 A useful thing the Lambda expressions will be able to do in Java 8 is type inferencing. 
-Type inferencing was initially introduced in the Java 7 sdk, but contribute to higher order functional programming. 
+
+>Type inferencing was initially introduced in the Java 7 sdk, but contribute to higher order functional programming. 
+
+>That sentence doesn't make sense
+
 Type inferencing is very useful in programming because we can choose to omit a type definition whenever the compiler could infer that type by itself. 
 For example, in this code:
 
@@ -76,12 +82,14 @@ This further removes bulk from programs by delaying the evaluation of an express
 Additionally, lazy evaluation avoids repeating the same evaluation, which can reduce run time by an exponential factor. 
 This new collection method benefits most on multicore processors by enabling automatic parallelism.
 
+>These two sections are redundant
+
 ..................................................................................................................
 
 #Parallel Collections
 
 The name Scala is a blend of the words scalable and language.
-Scala was designed to be easily scalable to very large problems.
+Scala was designed to scale easily to very large problems.
 One key feature that makes this possible is Scala's parallel collections.
 In many languages, including Java, utilizing multiple CPU cores is difficult, unintuitive, and cumbersome.
 In Scala, scaling up to multiple threads can be as easy as adding one extra keyword to a statement.
@@ -104,6 +112,9 @@ The parallel collections will be key to making Java more competitive with Scala.
 
 #Conclusion
 
-With these new additions to the Java SDK, Java is moving from an imperative programming language to a more dynamic language that incorporates both imperative and functional programming. 
+>With these new additions to the Java SDK, Java is moving from an imperative programming language to a more dynamic language that incorporates both imperative and functional programming. 
+
+>Java is not a dynamic language. Dynamic language is something completely different.
+
 Scala is purely a functional programming language that uses the JVM, however with the direction Java 8 is moving in, Scala will become less necessary. 
 Java is a more popular language with greater developer support and will therefore be able to update faster continue its move towards functional programming.
