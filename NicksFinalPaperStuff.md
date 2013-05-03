@@ -78,7 +78,8 @@ With the new lambda expressions, it will be easier to spread out the processing 
 A current problem with Java is that the client code is responsible for processing different elements in parallel. 
 With Java 8, the collection will be able to take care of this organization. 
 With support for internal iterations of collections, Java will more efficiently utilize parallel hardware. 
-This will also help push Java to a more functional programming style. 
+This will also help push Java to a more functional programming style, similar to Scala. 
+
 The name Scala is a blend of the words scalable and language.
 Scala was designed to be easily scalable to very large problems.
 One key feature that makes this possible is Scala's parallel collections.
